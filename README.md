@@ -11,7 +11,10 @@ Deploy this using [Vercel](https://vercel.com?utm_source=github&utm_medium=readm
 
 ## sample contents
 - sticky footer with tailwindcss
-
+- dashboard with sidebar and notification drop window
+  - reference: https://tailwindcomponents.com/component/dashboard-template
+  - reference code: https://github.com/tailwindcomponents/dashboard
+  - orignal code uses alpine.js, so i converted this to with react.
 
 ## repositry productoin procedure
 1. cra
