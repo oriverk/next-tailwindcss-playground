@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "run-p dev:*",
-    "dev:css": "postcss src/style/globals.css -o src/style/bundle.css -w",
+    "dev:css": "postcss src/style/tailwind.css -o src/style/global.css",
     "dev:next": "next",
     "build": "run-s build:*",
-    "build:css": "postcss src/style/globals.css -o src/style/bundle.css",
+    "build:css": "NODE_ENV=production postcss src/style/tailwind.css -o src/style/bundle.min.css",
     "build:next": "next build",
     "start": "next start"
   },
@@ -27,6 +27,7 @@
     "postcss-cli": "^8.3.1",
     "postcss-custom-properties": "^11.0.0",
     "postcss-preset-env": "^6.7.0",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.1.3"
   }
